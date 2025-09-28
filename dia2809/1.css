@@ -1,0 +1,40 @@
+body {
+    background: linear-gradient(rgb(0, 192, 250), rgb(30, 7, 112));
+    margin: 0;
+    min-height: 100vh;          /* ocupa sempre a altura da tela */
+    display: flex;
+    flex-direction: column;
+    align-items: center;        /* centraliza horizontalmente */
+    justify-content: center;    /* centraliza verticalmente */
+    color: white;               /* texto visível */
+    text-align: center;         /* centraliza textos */
+    font-family: Arial, sans-serif;
+    padding: 20px;              /* espaço interno para não colar nas bordas */
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: clamp(20px, 4vw, 36px);  /* título se ajusta ao tamanho da tela */
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px; /* limite para não ficar esticado demais em telas grandes */
+    width: 100%;
+}
+
+img {
+    max-width: 90%;   /* ocupa no máximo 90% da largura da tela */
+    height: auto;     /* mantém proporção */
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.6); /* sombra bonita */
+}
+
+h5 {
+    margin: 10px 0 5px 0;
+    line-height: 1.5;
+}
